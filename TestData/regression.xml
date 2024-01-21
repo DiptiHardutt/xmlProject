@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="regression">
+	
+	<test name="LoginTest">
+		<groups>
+			<run>
+				<include name ="regression"/>
+			</run>
+		</groups>
+		<parameter name="userName" value="demo@codefios.com" />
+		<parameter name="password" value="abc123" />
+		<parameter name="expDashboardHeaderText" value="Dashboard" />
+		<parameter name="alertUserNameText" value="Please enter your user name" />
+		<parameter name="alertPasswordText" value="Please enter your password" />
+		<parameter name="expNewCustomerHeaderText" value="New Customer" />
+		<parameter name="FullName" value="test" />
+		<parameter name="CompanyName" value="Techfios" />
+		<parameter name="Email" value="test@gmail.com" />
+		<parameter name="Phone" value="a7984538" />
+		<parameter name="Address" value="Test Building" />
+		<parameter name="City" value="Carrolton" />
+		<parameter name="ZipCode" value="a674361" />
+		<parameter name="Country" value="India" />
+		<parameter name="Group" value="Selenium" />
+		<parameter name="zipCodeMin" value="a768" />
+		<parameter name="zipCodeMax" value="a6342879546" />
+		<parameter name="expZipCodeMinText" value="Error: Do not allow less than 5 digits" />
+		<parameter name="expZipCodeMaxText" value="Error: Do not allow more than 9 digits" />
+		
+		
+
+		<classes>
+			<class name="test.LoginTest" />
+			<class name="test.AddCustomerTest"/>
+		</classes>
+		
+	</test>
+
+</suite>
